@@ -1,7 +1,6 @@
-let personName = 'Paul';
-function canPlay() {
+function canPlay(personName) {
   if (true) {
-    let personName = 'Paul';
+    personName = 'Paul';
   }
 
   personName += ' plays football'; // Argh! personName is not defined
