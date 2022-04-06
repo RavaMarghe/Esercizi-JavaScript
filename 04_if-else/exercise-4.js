@@ -5,17 +5,16 @@
 // default => 1000
 
 
-function calculateSalary(input) {
-
-  if (input == 'ceo') {
-    return 2200;
-  }else if(input == 'manager' || input == 'cto'){
-    return 1800;
-  }else if(input == 'developer'){
-    return 1500;
-  }else{
-    return 1000
-  }
+function calculateSalary(ruolo) {
+ if (ruolo === 'ceo') {
+     console.log(2200);
+ } else if (ruolo === 'manager' | 'cto') {
+     console.log(1800);
+ } else if (ruolo === 'developer') {
+     console.log(1500);
+ } else {
+     console.log(1000);
+ }
 }
 
 const ceoSalary = calculateSalary('ceo');
