@@ -1,6 +1,20 @@
 function calculateAverageAge(persons) {
-  // ...
+  
+  function somma () {
+    let x = 0;
+    let i;
+    for (i in arguments) {
+      x = x + arguments[i];
+    }
+    return x;
+  }
+
+consol.log(somma(2 4 6 8));
+
 }
+
+
+
 
 const persons = [
   { name: 'Paul', age: 16 },
