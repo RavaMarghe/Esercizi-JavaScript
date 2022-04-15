@@ -1,4 +1,4 @@
-var students = ['Paul', 'George', 'Lucas'];
+const students = ['Paul', 'George', 'Lucas'];
 
 function addStudent(student) {
   students.push(student);
