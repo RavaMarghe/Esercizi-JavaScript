@@ -23,8 +23,6 @@ const ctoSalary = calculateSalary('cto');
 const developerSalary = calculateSalary('developer');
 const otherSalary = calculateSalary('other');
 
-// why?
-
 console.log(ceoSalary);
 console.log(managerSalary);
 console.log(ctoSalary);
