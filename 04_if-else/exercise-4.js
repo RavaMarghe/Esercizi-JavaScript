@@ -5,7 +5,7 @@
 // default => 1000
 
 
-function calculateSalary(ruolo) {
+function calculateSalary(ruolo = 1000) {
  if (ruolo === 'ceo') {
      console.log(2200);
  } else if (ruolo === 'manager' | 'cto') {
@@ -23,6 +23,7 @@ const ctoSalary = calculateSalary('cto');
 const developerSalary = calculateSalary('developer');
 const otherSalary = calculateSalary('other');
 
+// why?
 
 console.log(ceoSalary);
 console.log(managerSalary);
