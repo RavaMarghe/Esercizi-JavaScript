@@ -10,7 +10,7 @@ const sum = (a, b) => {
   return a + b;
 }
 
-const log = (value) => {
+const log = value => {
   console.log(value);
 }
 
