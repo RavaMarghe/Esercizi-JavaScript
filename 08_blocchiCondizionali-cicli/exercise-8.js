@@ -1,19 +1,14 @@
 function calculateAverageAge(persons) {
   
-  function somma () {
-    let x = 0;
-    let i;
-    for (i in arguments) {
-      x = x + arguments[i];
-    }
-    return x;
+  let sum = 0;
+
+  for (let counter = 0; counter < persons.length; counter++) {
+    sum += persons[counter].age;
   }
 
-consol.log(somma(2 4 6 8));
+  return (sum / persons.length);
 
 }
-
-
 
 
 const persons = [
