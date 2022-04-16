@@ -1,6 +1,10 @@
 function pow(base) {
-  // ...
+  return function exp(esponente) {
+    return base ** esponente;
+  }
 }
+
+
 
 const pow2 = pow(2);
 const pow5 = pow(5);
