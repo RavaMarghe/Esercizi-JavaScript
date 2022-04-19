@@ -9,13 +9,10 @@ function calculateSalary(role) {
     case 'ceo':
       return 2200;
       break;
-    /*case ('manager' | 'cto'):       //perchè così non funziona???
-      return 1800;
-      break;*/
-      case 'manager':
+    case 'manager':
         return 1800;
         break;
-      case 'cto':
+    case 'cto':
         return 1800;
         break;
     case 'developer':
