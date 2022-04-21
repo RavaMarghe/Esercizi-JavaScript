@@ -8,7 +8,7 @@ Esempio:
 calculator
   .add(2) // 2
   .add(4) // 6
-  .multiply(3) // 18
+  .multiply(3) // 18\
   .sub(1) // 17
   .sub(3) // 14
   .divide(2) // 7

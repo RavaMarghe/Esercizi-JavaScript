@@ -1,7 +1,30 @@
 function calculate() {
+    let a = 0;
+    const operazioni = {
+        add: function(b) {
+            a += b;
+            return this;      
+        },
+        sub: function(b) {
+            a -= b;
+            return this;
+        },
+        multiply: function(b) {
+            a *= b;
+            return this;
+        },
+        divide: function(b) {
+            a /= b;
+            return this;
+        },
+        printResult: function() {
+            console.log(a)
+        }
+
+    }
+    return operazioni;
 
 }
-
 
 
 const calculator = calculate();
