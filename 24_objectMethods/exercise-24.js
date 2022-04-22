@@ -6,4 +6,4 @@ const person = {
 
 // Print values of person using Object.values
 
-Object.values(person);
+console.log(Object.values(person));
