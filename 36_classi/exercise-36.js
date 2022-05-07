@@ -1,4 +1,8 @@
 class Person {
+  static fromObject(obj) {
+    return new this(obj.firstName, obj.lastName)
+  }
+
   constructor(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
