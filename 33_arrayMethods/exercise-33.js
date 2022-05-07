@@ -1,6 +1,6 @@
 function firstUncompletedNote(notes) {
   const notCompleted = notes.filter(note => note.todos.find(note => note.done === false));
-  const firstNotCompleted = notCompleted.at(0)
+  const firstNotCompleted = notCompleted.at(0);
   return firstNotCompleted
 }
 
