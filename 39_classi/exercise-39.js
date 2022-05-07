@@ -17,8 +17,17 @@ class Circle {
   }
 }
 
-class AreaCalculator {
-  // ...
+class AreaCalculator{
+
+  static calculate(area) {
+    if (area === square) {
+      return area.side ** 2;     
+    } else if (area === rectangle) {
+      return area.width * area.height;
+    } else if (area === circle) {
+      return area.radius ** 2 * Math.PI;
+    }
+  }
 }
 
 const square = new Square(4);
