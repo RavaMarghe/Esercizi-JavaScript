@@ -18,6 +18,21 @@ class BankAccount {
   }
 }
 
+class BankAccountVip extends BankAccount {
+  constructor(initialAmount) {
+    super(initialAmount);
+  }
+
+  deposit(amount) {
+    if (amount >= 1000) {
+      super.deposit(amount += amount * 3 / 100);
+    } else {
+      super.deposit(amount);
+    }
+}
+
+}
+
 const bankAccountVip = new BankAccountVip(1000);
 bankAccountVip.deposit(500);
 bankAccountVip.deposit(1200);
