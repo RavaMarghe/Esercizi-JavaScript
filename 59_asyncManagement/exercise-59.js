@@ -1,4 +1,4 @@
-const persons = [
+ const persons = [
   {
     id: 1,
     firstName: 'Mario',
@@ -34,9 +34,9 @@ function fetchPersonById(id) {
 }
 
 fetchPersonById(7)
-.then((person) => console.log(person))
+.then((person) => console.log(JSON.parse(person)))
 .catch((err) => console.log(err));
 
 fetchPersonById(1)
-.then((person) =>  console.log(person))
+.then((person) =>  console.log(JSON.parse(person)))
 .catch((err) => console.log(err));
