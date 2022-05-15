@@ -10,5 +10,37 @@
 </html>
 
 <script>
-  // Code here
+
+window.onload = function initForm() {
+  const form = document.getElementById('person-form');
+
+  const name = document.createElement('input');
+  name.setAttribute('id', 'firstname');
+  name.setAttribute('type', 'text');
+  name.setAttribute('placeholder', 'First Name');
+  form.append(name)
+
+  const surName = document.createElement('input');
+  surName.setAttribute('id', 'lastname');
+  surName.setAttribute('type', 'text');
+  surName.setAttribute('placeholder', 'Last Name');
+  form.append(surName);
+
+  const age = document.createElement('input');
+  age.setAttribute('id', 'age');
+  age.setAttribute('type', 'number');
+  age.setAttribute('placeholder', 'Age');
+  form.append(age);
+}
+
+const submitBtn = document.querySelector('button');
+submitBtn.onclick = function submitPersonForm() {
+  event.preventDefault();
+  const person = {};
+  const input = document.querySelectorAll('input');
+  input.forEach((element) => (person[element.id] = element.value));
+  console.log(person);
+}
+
+
 </script>
