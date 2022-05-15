@@ -20,5 +20,12 @@
 </html>
 
 <script>
-  // code here
+  let input = document.querySelectorAll('input');
+  let person = {};
+  
+  input.forEach((element) => (person[element.id] = element.value));
+
+  document.querySelector('form').setAttribute('data-person', JSON.stringify(person));
+
+  console.log(person);
 </script>
