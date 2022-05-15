@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <div id="container">
+      <h2>Person's List</h2>
+      <table id="person-table">
+        <tbody></tbody>
+      </table>
+      <button id="add-row">Add row</button>
+    </div>
+  </body>
+</html>
+
+<script>
+
+  let addRowBtn = document.getElementById('add-row')
+
+  addRowBtn.onclick = function addRow() {
+    let tableRow = document.createElement('tr');
+    let colName = document.createElement('td');
+    let colSurname = document.createElement('td');
+    let colAge = document.createElement('td');
+
+    colName.innerHTML = 'firstName';
+    tableRow.append(colName);
+
+    colSurname.innerHTML = 'lastName';
+    tableRow.append(colSurname);
+
+    colAge.innerHTML = 'age';
+    tableRow.append(colAge);
+
+    document.querySelector('tbody').append(tableRow);
+  }
+
+</script>
