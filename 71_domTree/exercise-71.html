@@ -20,5 +20,9 @@
 </html>
 
 <script>
-  // code here
+  let label = document.querySelectorAll('label');
+  let input = document.querySelectorAll('input');
+  for (let i = 0; i < label.length; i++) {
+    console.log(`${label[i].textContent} ${input[i].value}`);
+  }
 </script>
