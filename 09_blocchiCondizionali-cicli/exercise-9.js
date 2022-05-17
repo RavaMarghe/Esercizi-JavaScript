@@ -1,8 +1,11 @@
 function getKeys(obj) {
   
-  for (let x in person) {
-    console.log(x);
+  let arr = [];
+  for (let x in obj) {
+    arr.push(x);
   }
+
+  return arr;
 
 }
 
