@@ -30,8 +30,9 @@ fetchPersonById(2).then((person) => console.log(person));*/
 function fetchPersonById(id) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (persons.find(person => person.id === id)) {
-        resolve(persons.find(person => person.id === id));
+      const person = persons.find(person => person.id === id);
+      if (person) {
+        resolve(person);
       } else {
         reject(new Error('id not found'));
       }
